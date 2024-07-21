@@ -45,4 +45,4 @@ Download a [script](model.sql) with Database Model here and apply the script to 
 | [Day07](day07)      | GROUP BY, HAVING, LIMIT, COUNT, MAX, MIN, AVG, ROUND,          |
 | [Day08](day08)      | ACID properties, isolation levels, transactions                |
 | [Day09](day09)      | CREATE TRIGGER, CREATE FUNCTION                                |
-| [Team01](team10)    | first ETL process                                              |
+| [Team01](team01)    | first ETL process                                              |
