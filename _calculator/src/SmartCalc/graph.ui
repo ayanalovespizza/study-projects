@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>graph</class>
+ <widget class="QDialog" name="graph">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>671</width>
+    <height>444</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>671</width>
+    <height>444</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>671</width>
+    <height>444</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Graph Builder</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #E0D8F2;</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_close">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>400</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background-color: #635873;
+  margin: 5px 0px;
+  border-radius: 10px;
+  color: #F2F2F2;
+  
+}
+QPushButton:pressed {
+    background-color: #726881; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QCustomPlot" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>651</width>
+     <height>351</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QLabel" name="label_exp">
+    <property name="geometry">
+     <rect>
+      <x>631</x>
+      <y>0</y>
+      <width>20</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>TT Firs Neue</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+  qproperty-alignment: 'AlignVCenter | AlignRight';
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  color: #0D0D0D;
+  padding: 10px;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>410</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  color: #0D0D0D;
+}</string>
+   </property>
+   <property name="text">
+    <string>X max:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>380</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  color: #0D0D0D;
+}</string>
+   </property>
+   <property name="text">
+    <string>X min:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>380</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  color: #0D0D0D;
+}</string>
+   </property>
+   <property name="text">
+    <string>Y min:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>410</y>
+     <width>58</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel {
+  color: #0D0D0D;
+}</string>
+   </property>
+   <property name="text">
+    <string>Y max:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_build">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>370</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+  background-color: #635873;
+  margin: 5px 0px;
+  border-radius: 10px;
+  color: #F2F2F2;
+  
+}
+QPushButton:pressed {
+    background-color: #726881; 
+}</string>
+   </property>
+   <property name="text">
+    <string>Build a graph</string>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_xmax">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>401</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: 'TT Firs Neue'; font-size: 14px; color: #0D0D0D</string>
+   </property>
+   <property name="minimum">
+    <double>-1000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_xmin">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>370</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: 'TT Firs Neue'; font-size: 14px; color: #0D0D0D</string>
+   </property>
+   <property name="minimum">
+    <double>-1000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_ymax">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>400</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: 'TT Firs Neue'; font-size: 14px; color: #0D0D0D</string>
+   </property>
+   <property name="minimum">
+    <double>-1000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000.000000000000000</double>
+   </property>
+  </widget>
+  <widget class="QDoubleSpinBox" name="doubleSpinBox_ymin">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>370</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>TT Firs Neue</family>
+     <pointsize>-1</pointsize>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>IBeamCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font-family: 'TT Firs Neue'; font-size: 14px; color: #0D0D0D</string>
+   </property>
+   <property name="minimum">
+    <double>-1000000.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000.000000000000000</double>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
